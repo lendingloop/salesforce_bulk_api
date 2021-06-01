@@ -28,6 +28,7 @@ module SalesforceBulkApi
       if !@external_field.nil?
         xml += "<externalIdFieldName>#{@external_field}</externalIdFieldName>"
       end
+      xml += "<concurrencyMode>Serial</concurrencyMode>"
       xml += "<contentType>XML</contentType>"
       xml += "</jobInfo>"
 
